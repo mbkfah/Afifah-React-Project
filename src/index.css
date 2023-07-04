@@ -2,9 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-.pink {
+@layer base {
+  body {
+    @apply bg-pink-800 text-white p-8;
+  }
+  /* input {
+    @apply border-2 rounded-lg w-full bg bg-slate-900 text text-slate-300;
+  } */
+  h1 {
+    @apply text-3xl p-6 font-bold;
+  }
+  h3 {
+    @apply text-xl font-bold;
+  }
+  p {
+    @apply font-bold text-xl;
+  }
+}
+@layer components {
+  .card {
+    @apply bg-indigo-900 text-indigo-400;
+  }
+}
+
+/* .pink {
   background-color: pink;
 }
 .blue {
   background-color: skyblue;
-}
+} */
